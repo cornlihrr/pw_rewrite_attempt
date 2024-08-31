@@ -15,7 +15,7 @@ function normal(x)
 function abnormal(y)
 {
     y.className = "normalsize";
-    imglol.src = "images/entitledpiece";
+    imglol.src = "images/entitledpiece.png";
     y.classList.remove("smolsize");
     imglol.style = 'transition: width 0.2s';
 }
