@@ -89,7 +89,6 @@ p > a
 p > a:hover
 {
     color: black;
-    transition: color 0.1s;
 }
 
 #nice
