@@ -1,0 +1,57 @@
+* {font-family: 'Comic Sans MS'; font-size: 1.5vw;}
+a {text-decoration: none;}
+.text-align_center {text-align: center;}
+div, .topbar div a, .topbar div span {border: rgba(0,0,0, 0.75) solid 1px; border-radius: 5px;}
+
+.topbar {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: 100%;
+  background-color: blue;
+  border-radius: 0px 0px 10px 10px; }
+.topbar_buttons {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-content: center;
+  justify-content: space-evenly;
+  margin: 0 4vw;
+  padding: 0.3vw 0;
+  width: 70%;
+  height: auto;
+  background-color: yellow; }
+.topbar_buttons a {
+  text-align: center;
+  padding: 0.15vw 0.3vw;
+  background-color: red;
+  color: white; }
+.topbar_title {
+  text-align: center;
+  margin: auto 2vw auto auto;
+  padding: .2vw .3vw;
+  width: auto;
+  height: auto;
+  background-color: orange;
+  color: black;
+  text-decoration: underline; }
+.topbar_title span {padding: 0.1vw 2vw; font-size: 1.1rem;}
+
+#tospaceornottospace {width: 100%; margin: 2vw 0 4vw 0;}
+
+.content {margin: auto auto 0.5vw auto; width: 95%;}
+
+.content_intro1 {
+  padding: 0.5vw;
+  font-family: Consolas, 'Lucida Typewriter', monospace;
+  font-weight: 600; }
+.content_intro2 {padding: 0.4vw;}
+.content_intro2_img {grid-row-start: 1; grid-row-end: 4;}
+.content_whoishe {grid-column: 2; grid-row: 2; text-align: center; padding: 0.3vw; margin: 0.7vw; width: fit-content; height: fit-content;}
+
+.content_intro2_grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  align-content: center;
+  justify-content: center;
+  padding: 0.4vw; }
