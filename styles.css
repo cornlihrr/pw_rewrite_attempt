@@ -1,0 +1,159 @@
+a:hover {
+    color: red;
+}
+
+.header-row-class {
+    width: clamp(50%, 100%, 100%);
+}
+
+div, p
+{
+    font-family: "Comic Sans MS";
+    border-width: 0.125em;
+    border-style: solid;
+    border-radius:5px;
+    /* font-size: clamp(1vw, 100%, 2vw); */
+}
+
+h3
+{
+    font-size:1.5vw
+}
+
+.normalsize
+{
+    width: clamp(100%, 100%, 25%);
+    border-radius: 1px;
+}
+
+.smolsize
+{
+    width: clamp(75%, 75%, 25%);
+    border-radius: 1px;
+}
+
+
+/* h1
+{
+    font-size: clamp(5vw, auto, 6vw);
+} */
+
+.spacer
+{
+    border-style: none;
+    clear: both;
+    margin: 0.5vw;
+    padding: 0.5vw;
+}
+.center-here
+{
+    text-align: center;
+}
+
+li
+{
+    font-size: clamp(1vw, 100%, 2vw);
+    position: static;
+}
+
+.filler1
+{
+    min-width: 1em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    margin: 0;
+    color: rgb(254,254,254);
+    border-color: black;
+    font-size: clamp(1vw, 100%, 2vw);
+    background-color: red;
+}
+
+.main-container-nav
+{
+    width: 75%;
+    /*top right bottom left*/
+    margin: 0.25em 1.25em 0 2.5em;
+    padding: 0.25em 0 0.25em 0;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    background-color: yellow;
+}
+
+p > a
+{
+    font-style: normal; color: white; text-decoration: none;
+}
+
+#nice
+{
+    color: red;
+}
+
+#nice:hover
+{
+    color: pink;
+    transition: color 0.01s;
+}
+
+.header-row-class
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1em;
+}
+
+.left-margin-here
+{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.stuff
+{
+    border-width: 1px; border-style: solid; width: clamp(25%, 50%, 75%); margin-right: auto; margin-left: auto; margin-top: auto; margin-bottom: auto;
+}
+
+/*
+So i need different styles here at least 5
+*/
+@media screen and (max-width: 400px)
+{
+    .filler1, p, div, li{
+        font-size: clamp(4vw, 100%, 2vw);
+        transition: font-size 0.2s;
+    }
+
+    .main-container-nav
+    {
+        width: 100%;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .row, #pogu
+    {
+        display: none;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+
+}
+
+@media screen and (min-width: 401px)
+{
+    .filler1, p, div, li{
+        font-size: clamp(1vw, 1.5vw, 2vw);
+        transition: font-size 0.2s;
+    }
+    h1
+    {
+        font-size: clamp(2vw, 2.5vw, 3vw);
+        transition: font-size 0.2s;
+    }
+}
